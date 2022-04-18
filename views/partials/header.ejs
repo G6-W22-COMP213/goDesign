@@ -9,16 +9,21 @@
       <link rel="stylesheet" href='/stylesheets/about.css'>
       <link rel="stylesheet" href='/stylesheets/contact.css'>
       <link rel="stylesheet" href='/stylesheets/database.css'>
+      <link rel="stylesheet" href='/stylesheets/design.css'>
       <link rel='stylesheet' href='/@fortawesome/fontawesome-free/css/all.min.css'/>
 
   </head>
   <body>
-    <div class="web-wrap">
         <!--Header starts here-->
         <nav>
             <div class="logo">
                 <a href="/"><img src="/images/logo2.png" alt="Logo Image"></a>
             </div>
+            <div class="hamburger">
+              <div class="line1"></div>
+              <div class="line2"></div>
+              <div class="line3"></div>
+          </div>
             <ul class="nav-links">
                       <li class="nav-item">
                         <% if (title == "Home") { %>
@@ -36,6 +41,15 @@
                             <a class="nav-link" href="/gallery">
                         <% } %>            
                            Gallery </a>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <% if (title == "design") { %>
+                            <a href="/design">
+                        <% } else { %>
+                            <a class="nav-link" href="/design">
+                        <% } %>            
+                           Design </a>
                         </a>
                       </li>
                       <li class="nav-item">
@@ -71,5 +85,5 @@
 
                 </ul>
         </nav>
-    </div>
+        <main>
             <!--Navigation bar ends here-->
