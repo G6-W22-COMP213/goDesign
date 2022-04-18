@@ -14,6 +14,15 @@ exports.gallery = function(req, res, next) {
         }
     );
 }
+exports.design = function(req, res, next) {
+    res.render(
+        'design', 
+        { 
+            title: 'design',
+            userName: req.user ? req.user.username : '' 
+        }
+    );
+}
     exports.contact = function(req, res, next) {
         res.render(
             'contact', 

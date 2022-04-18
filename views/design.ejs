@@ -1,0 +1,66 @@
+<% include partials/header.ejs %>
+
+<div id="demoContainer">
+    <div id="header">
+        <h1>GoDesign Studi</h1>
+    </div>
+    <div id="imageDemoContainer">
+    <div id="preview">
+    </div>
+        <div id="mainImageLoading" class="hide"></div>
+        <div id="mainImage"><img id="mainImageTag" src="/images/Hanging_T-Shirt.jpg"></div>
+        <div id="imageThumbs">
+            <ul id="thumbs">
+                <li class="active" id="hangingThumb"><img src="/images/Hanging_T-Shirt_small.jpg" /></li>
+                <li id="layingThumb"><img src="/images/laying-shirt.jpg" /></li>
+                <li id="modelThumb"><img src="/images/shirt_only.jpg" /></li>
+            </ul>
+        </div>
+    </div>
+    <div id="demoInputContainer">
+        <div class="inputSelections">
+            <h2>Select a color:</h2>
+            <ul id="colorList" class="swatches">
+                <li class="active" id="ffffff"><img src="/images/white-bar.jpg" /></li>
+                <li id="47E8D2"><img src="/images/lightblue-bar.jpg" /></li>
+                <li id="DCA381"><img src="/images/orange-bar.jpg" /></li>
+                <li id="702C3C"><img src="/images/darkred-bar.jpg" /></li>
+                <li id="E9C660"><img src="/images/yellow-bar.jpg" /></li>
+                <li id="A11D1F"><img src="/images/lightblue2-bar.jpg" /></li>
+            </ul>
+            <p><a href="#" onclick="addColor()">Add a custom color</a></p>
+            <input type='text' id="full"/>
+        </div>
+        <div class="inputSelections">
+            <h2>Select a texture:</h2>
+            <ul id="texture" class="swatches">
+                <li id="flat" class="active"><img src="/images/white-bar.jpg" /></li>
+                <li id="heatherTexture"><img src="/images/textured-bar.jpg" /></li>
+            </ul>
+        </div>
+        <div class="inputSelections">
+            <h2>Add a logo:</h2>
+            </ul>
+            <p><a href="#" id="add_a_logo">Add a Custom Logo</a></p>
+        </div>
+        <div class="inputSelections">
+            <h2>Add text:</h2>
+            <select id="fontList">
+                <option value="Arial">Arial</option>
+                <option value="Georgia">Georgia</option>
+                <option value="Sacramento">Sacramento</option>
+                <option value="Roboto">Roboto</option>
+                <option value="Montserrat">Montserrat</option>
+                <option value="Bitter">Bitter</option>
+            </select>
+            <div id="textInputContainer">
+                <input type="text" id="shirtText" />
+                <input type="button" id="addText" value="Add Text" />
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<% include partials/footer.ejs %>
+

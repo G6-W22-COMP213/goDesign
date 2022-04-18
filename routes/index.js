@@ -9,6 +9,9 @@ router.get('/', indexController.home);
 /* GET Gallery page. */
 router.get('/gallery', indexController.gallery);
 
+/*Get design page */
+router.get('/design', indexController.design);
+
 /* GET About page. */
 router.get('/about', indexController.about);
 
